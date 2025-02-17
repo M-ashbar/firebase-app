@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        body {
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+    
+        #container {
+            width: 360px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+        }
+    
+        h2 {
+            text-align: center;
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    
+        .input-box {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .input-box input {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+        }
+    
+        .input-box input:focus {
+            border-color: #6c63ff;
+            outline: none;
+        }
+    
+        #btn-login, #btn-signup {
+            width: 100%;
+            padding: 14px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        #btn-login:hover, #btn-signup:hover {
+            background-color: #574bdb;
+        }
+    
+        #welcome-box {
+            display: none;
+            background: #fff;
+            padding: 20px;
+            width: 360px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    
+        #welcome-note {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    
+        #logout-btn {
+            padding: 12px 20px;
+            background: #ff5f5f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+    
+        #logout-btn:hover {
+            background: #e00404;
+        }
+    
+        .toggle-link {
+            font-size: 1rem;
+            color: #6c63ff;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+       
+</head>
+<body>
+
+    <div id="container">
+        <h2>Sign Up</h2>
+        <div class="input-box">
+            <input id="signup-email" type="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <input id="signup-password" type="password" placeholder="Password" required>
+        </div>
+        <div class="input-box">
+            <input id="signup-confirm-password" type="password" placeholder="Confirm Password" required>
+        </div>
+        <button id="btn-signup">Sign Up</button>
+    </div>
+    
+    <div id="container">
+        <h2>Login</h2>
+        <div class="input-box">
+            <input id="login-email" type="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <input id="login-password" type="password" placeholder="Password" required>
+        </div>
+        <button id="btn-login">Login</button>
+    </div>
+    
+
+    <div id="welcome-box" style="display: none;">
+        <p id="welcome-note">ALI </p>
+
+
+        <button id="logout-btn">LOGOUT</button>
+   </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
